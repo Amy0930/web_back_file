@@ -1,0 +1,11 @@
+# Download stable diffusion models
+%cd /content/stable-diffusion-webui/models/Stable-diffusion/
+!wget https://civitai.com/api/download/models/14840 -O lofi_V2pre.safetensors
+!wget https://civitai.com/api/download/models/7279 -O colorful_v21.safetensors
+!wget https://huggingface.co/nuigurumi/basil_mix/blob/main/Basil_mix_fixed.safetensors -O basil_mix_fixed.safetensors
+!wget https://civitai.com/api/download/models/15980 -O museV1_v1.safetensors
+
+# Download VAE model
+!mkdir -p /content/stable-diffusion-webui/models/VAE
+%cd /content/stable-diffusion-webui/models/VAE
+!wget https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors -O vae-ft-mse-840000-ema-pruned.safetensors
